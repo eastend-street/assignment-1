@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/odometer-theme-car.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Slot Machine</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="spin" type="button" class="btn btn-warning">START!</button>
+      <table>
+        <tbody>
+          <tr>
+            <td><span class="odometer slot1">9</span></td>
+            <td><span class="odometer slot2">9</span></td>
+            <td><span class="odometer slot3">9</span></td>
+          </tr>
+          <tr>
+            <td><button type="button" id="stop1" class="btn btn-warning">STOP</button></td>
+            <td><button type="button" id="stop2" class="btn btn-warning">STOP</button></td>
+            <td><button type="button" id="stop3" class="btn btn-warning">STOP</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/odometer.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
