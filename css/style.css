@@ -2,8 +2,27 @@ body {
   background-color: #000;
 }
 
+.container {
+}
+
+.instruction {
+  color: #fff;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.slot-table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slot-table td {
+  padding: 0.5rem 1rem;
+}
+
 .odometer {
   font-size: 5rem;
-  border: 1px solid #666;
-  margin-right: 1rem;
+  border: 1px solid #333;
+  /* margin-right: 1rem; */
 }
+
