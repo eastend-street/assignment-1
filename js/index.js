@@ -44,16 +44,19 @@ function stopSlot3() {
   const random = Math.floor(Math.random() * 10);
   $(".slot3").text(random);
   $(".slot3").html(random);
-  showResult();
+  setTimeout(showResult, 1950);
 }
 
-function showResult(){
-  console.log("done!");
+function showResult() {
+  const result = document.getElementsByClassName("result");
+  result[0].innerHTML = "Try again"
 }
 
 document.addEventListener("keydown", event => {
   if (event.keyCode === 32) {
     if (spaceCount === 0) {
+      const result = document.getElementsByClassName("result");
+      result[0].innerHTML = "";
       loop_slot1();
       loop_slot2();
       loop_slot3();
@@ -61,12 +64,10 @@ document.addEventListener("keydown", event => {
     } else if (spaceCount === 1) {
       stopSlot1();
       spaceCount += 1;
-    }
-    else if (spaceCount === 2) {
+    } else if (spaceCount === 2) {
       stopSlot2();
       spaceCount += 1;
-    }
-    else if (spaceCount === 3) {
+    } else if (spaceCount === 3) {
       stopSlot3();
       spaceCount = 0;
     }
